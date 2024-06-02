@@ -106,6 +106,6 @@ app.listen(port, () => {
   }).catch((err) => {
     console.error('Failed to connect to MongoDB with SSL', err);
   })
-});
+
     console.log(`Exemplo de app escutando na porta ${port}`);
 });
