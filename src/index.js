@@ -96,7 +96,6 @@ app.post("/", async (req, res) => {
 
 app.listen(port, () => {
     mongoose.connect('mongodb+srv://lirajhonatan14:uCoeCQu9ApXEmXdP@workout-api.ca7xldz.mongodb.net/?retryWrites=true&w=majority&appName=WorkOut-API', {
-    useNewUrlParser: true,
     useUnifiedTopology: true
 });
     console.log(`Exemplo de app escutando na porta ${port}`);
