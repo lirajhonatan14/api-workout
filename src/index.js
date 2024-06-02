@@ -96,7 +96,7 @@ app.post("/", async (req, res) => {
 
 app.listen(port, () => {
     mongoose.connect('mongodb+srv://lirajhonatan14:uCoeCQu9ApXEmXdP@workout-api.ca7xldz.mongodb.net/?retryWrites=true&w=majority&appName=WorkOut-API', {
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
     ssl: true, // Habilita SSL
     sslValidate: false, // Se você não quiser validar o certificado SSL (não recomendado para produção)
     useFindAndModify: false, // Se aplicável
