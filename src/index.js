@@ -12,19 +12,18 @@ const workoutSchema = new mongoose.Schema({
     name: String,
     description: String,
     category: String,
-    target_muscle_group: [String],  // Alterado para aceitar arrays
-    step_by_step_instructions: [String],  // Alterado para aceitar arrays
-    tips: String,
+    target_muscle_group: [String],  
+    step_by_step_instructions: [String], 
+    tips: [String],
     necessary_equipment: String,
-    place_to_perform: [String],  // Alterado para aceitar arrays
+    place_to_perform: [String],  
     difficulty_level: String,
-    repetition_duration: [String],  // Alterado para aceitar arrays
-    images_url: [String],  // Alterado para aceitar arrays
-    videos_url: [String],  // Alterado para aceitar arrays
-    benefits: [String],  // Alterado para aceitar arrays
-    precautions: [String],  // Alterado para aceitar arrays
-    author: String,
-    tags: [String]  // Alterado para aceitar arrays
+    repetition_duration: [String], 
+    images_url: String,  
+    videos_url: String,  
+    benefits: [String],  
+    precautions: [String],  
+    tags: [String]  
 });
 
 const Workout = mongoose.model('Workout', workoutSchema);
